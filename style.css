@@ -1,0 +1,171 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  top: 0;
+    width: 100%;
+  background-color: #1361bb;
+  /* 이 부분 작성해주세요 */
+  display: flex;
+  align-items: center;
+ justify-content: center;
+  flex-direction: column;
+  position: fixed;
+  z-index: 999;
+}
+
+header .logo {
+  position: relative;
+  box-sizing: border-box;
+  width: 100%;
+  height: 70px;
+  background-color: #fff;
+}
+
+header .logo img {
+  width: 100px;
+  height: 45px;
+}
+
+header .nav {
+  display: flex;
+ width: 200vh;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  /* 이 부분 작성해주세요 */
+  height: 40px;
+}
+
+.nav li {
+  
+}
+
+.nav li a {
+  /* 이 부분 작성해주세요 */
+  color: white;
+}
+
+.nav li a:hover {
+  background: #093774;
+}
+
+.bodyWrap {
+  position: relative;
+  min-height: 100vh;
+  top: 110px;
+}
+.bodyWrap li{
+  text-align: center;
+}
+.hero {
+  /* 이 부분 작성해주세요. */
+  display: flex;
+  background: #6392c7;
+ height: 1300px;
+
+ align-items: center;
+ justify-content: center;
+
+}
+
+.hero .hero_title {
+  font-size: 3rem;
+  text-align: center;
+  color: black;
+}
+
+.content {
+  width: 100%;
+  position: relative;
+  padding: 0 5rem;
+}
+
+.content:nth-of-type(odd) {
+  background-color: #6392c7;
+  height: 700px;
+}
+
+.content:nth-of-type(even) {
+  height: 900px;
+}
+
+.content:last-of-type {
+  height: 1300px;
+}
+
+.content .title {
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 3rem 0;
+}
+
+.contentWrap {
+  font-size: 1.2rem;
+  line-height: 2rem;
+}
+
+.pageUpBtn {
+  width: 70px;
+  height: 70px;
+  bottom: 2rem;
+  right: 2rem;
+  background: rgba(204, 204, 204, 0.678);
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s;
+  opacity: 0;
+}
+
+.pageUpBtn.active {
+  opacity: 1;
+}
+
+.pageUpBtn a {
+  text-align: center;
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.pageUpBtn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+@media (max-width: 769px) {
+  .nav li a {
+    font-size: 0.8rem;
+  }
+}
+
+.footer {
+  position: relative;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background: #2472b1;
+  color: #fff;
+  text-align: center;
+  padding: 1.5em;
+}
+
+.footer .footer-title {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.footer p {
+  margin-top: 10px;
+}
